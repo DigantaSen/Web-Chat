@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import socket from './socket';
 import toast, { Toaster } from 'react-hot-toast';
 import ScrollToBottom from 'react-scroll-to-bottom';
+import './App.css'
 
 function App() {
 

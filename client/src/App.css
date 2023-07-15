@@ -1,38 +1,263 @@
-.App {
+/* Add the following styles to your CSS file */
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  background-color: greenyellow;
+}
+
+.container-fluid {
+  background-color: greenyellow;
+  padding: 20px;
+  height: 100vh;
+}
+
+.row.bg-primary {
+  background-color: #075e54;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+.row.form-row {
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-secondary {
+  background-color: #128c7e;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.online-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #25d366;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.offline-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #dd4b39;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.alert-secondary {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.alert-secondary img {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.text-danger {
+  color: #dd4b39;
+  font-weight: bold;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-light {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Additional Styles */
+
+.row {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row.g-3 {
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
-.App-link {
-  color: #61dafb;
+.col-md-2,
+.col-md-5 {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-md-2 {
+  background-color: lightgreen;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  max-height: 400px;
 }
+
+.col-md-2 div {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.col-md-2 div:hover {
+  background-color: #f7f7f7;
+}
+
+.col-md-2 div.underline {
+  text-decoration: underline;
+}
+
+.col-md-2 .online-dot,
+.col-md-2 .offline-dot {
+  margin-left: 5px;
+}
+
+.col-md-2 .text-danger {
+  margin-left: 5px;
+}
+
+.col-md-5 {
+  background-color: green;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.col-md-5 .form-check {
+  margin-bottom: 10px;
+}
+
+.col-md-5 label {
+  margin-left: 5px;
+}
+
+.col-md-5 form input[type="file"] {
+  display: none;
+}
+
+.col-md-5 form .btn-file {
+  background-color: #128c7e;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.col-md-5 form .btn-file:hover {
+  background-color: #0b6a5c;
+}
+
+.col-md-5 .alert-secondary:last-child {
+  margin-bottom: 0;
+}
+
+.scroll-container {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+/* Font Decoration Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  color: #555;
+}
+
+a {
+  font-family: 'Arial', sans-serif;
+  color: #128c7e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Colorful Styles */
+
+.bg-primary {
+  background-color: #128c7e;
+}
+
+.bg-secondary {
+  background-color: #fb8c00;
+}
+
+.bg-success {
+  background-color: #43a047;
+}
+
+.bg-info {
+  background-color: #1976d2;
+}
+
+.bg-warning {
+  background-color: #ffb300;
+}
+
+.bg-danger {
+  background-color: #dd4b39;
+}
+
+.text-primary {
+  color: #128c7e;
+}
+
+.text-secondary {
+  color: #fb8c00;
+}
+
+.text-success {
+  color: #43a047;
+}
+
+.text-info {
+  color: #1976d2;
+}
+
+.text-warning {
+  color: #ffb300;
+}
+
+.text-danger {
+  color: #dd4b39;
+}
+
+/* Optional: Adjust the styling as per your preference */
